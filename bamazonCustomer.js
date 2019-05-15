@@ -38,7 +38,7 @@ function display () {
 	connection.query(query, function(err, res){
 	if (err) throw err;
 	var newTable = new Table ({
-		head: ['Item ID', 'Product', 'Department', 'Pice', 'Stock']
+		head: ['ID', 'Product', 'Department', 'Pice', 'Stock']
 		, colWidths: [10, 30, 15, 10, 10]
 		, colAligns: ['center', 'center','center', 'center', 'center']
 	
@@ -54,6 +54,7 @@ function display () {
 		])
 	};
 	console.log(newTable.toString());
+	userMessage();
  
 	});
 };
@@ -61,6 +62,27 @@ function display () {
 display();
 
 //Function for asking user the ID of product they would like to buy
+function userMessage () {
+	inquirer.prompt ([
+		{
+			name: 'ID',
+			type: 'input',
+			message: 'Enter in the ID for item you would like.',
+			filter: Number
+		},
+
+		{
+			name: 'Stock Quantity',
+			type: 'input',
+			message: 'Enter in how many items you woud like.',
+			filter: Number
+		},
+	]).then(function(answers){
+		var itemCount = answers.Stock;
+		var itemID = answers.ID;
+
+	})
+}
 
 //Function to check if there is enough product for user to order, if not error message display
 
