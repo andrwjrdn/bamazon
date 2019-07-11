@@ -12,6 +12,8 @@ This interface allows the user to see store inventory. When viewing the inventor
 
 ### Bamazon Demo
 
-A video demo of the app in the following link: 
+A Screenshot demo of the app: 
+
+<img width="714" alt="Screen Shot 2019-07-11 at 4 43 23 PM" src="https://user-images.githubusercontent.com/44654955/61092583-bc226400-a3fb-11e9-9d69-c742d25df1df.png">
 
 
