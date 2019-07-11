@@ -13,8 +13,10 @@ This interface allows the user to see store inventory. When viewing the inventor
 
 To install the application follow the instructions below:
 
-`git clone this repository in terminal
-run node bamazonCustomer.js`
+`
+<br>git clone this repository in terminal</br>
+<br>run node bamazonCustomer.js</br>
+`
 
 ### Bamazon Demo
 
