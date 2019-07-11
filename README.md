@@ -9,6 +9,12 @@ This application implements a simple command line based storefront using the npm
 ### Customer Interface
 This interface allows the user to see store inventory. When viewing the inventory, it is displayed as a table with Item ID's, Product Name, Department, Price, and Stock Quantity. Users are able to purchase items by entering the item ID followed by quantity of how much to purchase. If the user selects a quantity that is in stock, the order can be complete which displays purchase price and updates the store database. If the desired quantity is greater than the stock quantity, the user receives and error message to re-do their order.
 
+## Installation
+
+To install the application follow the instructions below:
+
+	git clone this repository in terminal
+ run node bamazonCustomer.js
 
 ### Bamazon Demo
 
